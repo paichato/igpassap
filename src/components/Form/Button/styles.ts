@@ -3,8 +3,7 @@ import { TouchableOpacity } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled(TouchableOpacity)`
-  background-color: ${({ theme }) => theme.colors.light.yellow};
-
+  background-color: ${({ theme }) => theme.colors.yellow};
   height: ${RFValue(56)}px;
   align-items: center;
   justify-content: center;
@@ -13,5 +12,5 @@ export const Container = styled(TouchableOpacity)`
 export const ButtonText = styled.Text`
   font-family: "Rubik_500Medium";
   font-size: ${RFValue(15)}px;
-  color: ${({ theme }) => theme.colors.light.title};
+  color: ${({ theme }) => theme.colors.white};
 `;

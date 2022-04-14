@@ -1,5 +1,5 @@
 import React from "react";
-import { Appearance, StatusBar } from "react-native";
+import { Appearance, StatusBar, useColorScheme } from "react-native";
 import AppLoading from "expo-app-loading";
 import {
   useFonts,
@@ -11,7 +11,8 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { AppRoutes } from "./src/routes/app.routes";
 import { ThemeProvider } from "styled-components/native";
-import theme from "./src/styles/theme";
+import darkTheme from "./src/styles/darkTheme";
+import lightTheme from "./src/styles/lightTheme";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,7 +21,7 @@ export default function App() {
     Rubik_500Medium,
   });
 
-  let colorScheme = Appearance.getColorScheme;
+  const colorScheme = useColorScheme();
   console.log(colorScheme);
 
   if (!fontsLoaded) {
@@ -29,7 +30,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <ThemeProvider theme={theme} colorScheme={colorScheme}>
+      <ThemeProvider theme={colorScheme === "dark" ? darkTheme : lightTheme}>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"

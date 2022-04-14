@@ -10,12 +10,12 @@ export const Container = styled.View`
 export const Label = styled.Text`
   font-family: "Rubik_400Regular";
   font-size: ${RFValue(15)}px;
-  color: ${({ theme }) => theme.colors.light.text};
+  color: ${({ theme }) => theme.colors.text};
   margin-bottom: 7px;
 `;
 
 export const Error = styled.Text`
-  color: ${({ theme }) => theme.colors.light.error};
+  color: ${({ theme }) => theme.colors.error};
   margin-bottom: 4px;
   font-family: "Rubik_300Light";
   font-size: ${RFValue(13)}px;
@@ -25,8 +25,8 @@ export const InputContainer = styled.View`
   flex-direction: row;
   align-items: center;
 
-  background: ${({ theme }) => theme.colors.light.white};
-  border: 1px ${({ theme }) => theme.colors.light.border};
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px ${({ theme }) => theme.colors.border};
   padding: 0 20px;
   border-radius: 4px;
   height: ${RFValue(56)}px;
@@ -34,7 +34,7 @@ export const InputContainer = styled.View`
 `;
 
 export const FormInput = styled(TextInput)`
-  color: ${({ theme }) => theme.colors.light.title};
+  color: ${({ theme }) => theme.colors.title};
   font-size: ${RFValue(15)}px;
   flex: 1;
   height: 100%;

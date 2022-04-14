@@ -12,21 +12,21 @@ export const Container = styled.View`
 
 export const Input = styled(TextInput)`
   font-size: ${RFValue(15)}px;
-  color: ${({ theme }) => theme.colors.light.title};
+  color: ${({ theme }) => theme.colors.title};
   font-family: "Rubik_400Regular";
   font-size: 15px;
   flex: 1;
   padding: 0 20px;
-  background: ${({ theme }) => theme.colors.light.white};
+  background: ${({ theme }) => theme.colors.white};
 
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border: 1px ${({ theme }) => theme.colors.light.border};
+  border: 1px ${({ theme }) => theme.colors.border};
   border-right-width: 0;
 `;
 
 export const Button = styled.Pressable`
-  background: ${({ theme }) => theme.colors.light.title};
+  background: ${({ theme }) => theme.colors.yellow};
   padding: 16px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;

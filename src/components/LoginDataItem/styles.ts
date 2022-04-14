@@ -6,7 +6,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled(LinearGradient).attrs({
   end: { x: 1, y: 0 },
 })`
-  border: 1px ${({ theme }) => theme.colors.light.border};
+  border: 1px ${({ theme }) => theme.colors.border};
   flex-direction: row;
   align-items: center;
   min-height: ${RFValue(80)}px;
@@ -33,13 +33,13 @@ export const Title = styled.Text`
   margin-bottom: ${RFValue(4)}px;
   font-family: "Rubik_400Regular";
   font-size: ${RFValue(13)}px;
-  color: ${({ theme }) => theme.colors.light.text};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Password = styled.Text`
   font-family: "Rubik_500Medium";
   font-size: ${RFValue(15)}px;
-  color: ${({ theme }) => theme.colors.light.main_color};
+  color: ${({ theme }) => theme.colors.main_color};
 `;
 
 export const LoginData = styled.View`
@@ -50,11 +50,11 @@ export const BoldTitle = styled.Text`
   margin-bottom: ${RFValue(4)}px;
   font-family: "Rubik_500Medium";
   font-size: ${RFValue(15)}px;
-  color: ${({ theme }) => theme.colors.light.title};
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Email = styled.Text`
   font-family: "Rubik_400Regular";
   font-size: ${RFValue(13)}px;
-  color: ${({ theme }) => theme.colors.light.text};
+  color: ${({ theme }) => theme.colors.text};
 `;
