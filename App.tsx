@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar } from "react-native";
+import { Appearance, StatusBar } from "react-native";
 import AppLoading from "expo-app-loading";
 import {
   useFonts,
@@ -20,13 +20,16 @@ export default function App() {
     Rubik_500Medium,
   });
 
+  let colorScheme = Appearance.getColorScheme;
+  console.log(colorScheme);
+
   if (!fontsLoaded) {
     return <AppLoading />;
   }
 
   return (
     <NavigationContainer>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme} colorScheme={colorScheme}>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
